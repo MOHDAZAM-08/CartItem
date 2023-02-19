@@ -1,38 +1,170 @@
 .App {
+  /* background-color: #0425328b; */
+}
+
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.active {
+  background-color: #053343;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+  font-weight: bold;
+  color: #fb8504;
+  font-size: 32px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand:hover {
+  color: #fb8504;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar .navbar-collapse {
+  margin-right: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar .navbar-collapse .nav-item {
+  padding: 0% 3%;
+}
+
+.navbar .navbar-collapse .nav-item .nav-link {
   color: white;
+  /* color: #000000; */
+  font-size: 20px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.servise {
+  margin: 10px 50px;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 8px #2c2c2ca9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  border: none;
+}
+
+.card:hover {
+  background-color: #248cb1af;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.con {
+  border-radius: 1rem;
+  padding: 15px 10px;
+  margin: 15px 40px;
+  width: 45%;
+}
+
+.con .form-control {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 3px 3px 8px #2c2c2ca9;
+  font-size: 20px;
+}
+
+.con .btn-primary {
+  margin: 19px 20px;
+  font-size: 20px;
+  border-radius: 8rem;
+  color: white;
+  border: none;
+  background-color: #0c81accd;
+}
+
+.con .btn-primary:hover {
+  background-color: #fb8504;
+  
+}
+
+.details {
+  width: 37%;
+  margin: 35px 70px;
+  /* float: right; */
+}
+
+@media (min-width:375px) {
+  .carousel-inner .carousel-item{
+display: block;
+color: red;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+
+
+
+.carousel-item .btn-primary {
+  margin: 10px 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 8rem;
+  color: white;
+  border: none;
+  background-color: #03ace9af;
+  font-weight: bold;
+}
+
+.carousel-item .btn-primary:hover {
+  background-color: #fb8504;
+}
+
+
+
+
+
+.tbody .table thead tr th {
+  background-color: #fb8504;
+  width: 270px;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+.tbody .table tbody tr td {
+  text-align: center;
+  border: none;
+  width: 270px;
+  font-size: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  align-items: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+.centeredA {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  align-items: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.centeredc{
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  align-items: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
 }
