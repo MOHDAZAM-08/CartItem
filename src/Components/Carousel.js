@@ -21,40 +21,34 @@ export default function Carousel() {
       <Navbar/>
 
       <div id="carouselExampleSlidesOnly" className="carousel carousel-fade" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active" style={{width:"100%", height:"615px",overflow:"hidden"}}>
-    <img src={img1} className="d-block w-100" alt="..." />
-    <div class="carousel-caption d-none d-md-block" style={{top: "160px"}}>
-        <h5 style={{fontSize:"100px"}}>HODA</h5>
-        <br/>
-        <h3>Air Conditioning & Electricals Service</h3>
-        <br/> <br/>
+  <div className="carousel-inner" id='carousel-inner'>
+    <div className="carousel-item active" id='carousel-item'>
+    <img src={img1} className=" img d-block " id='img' alt="..." />
+    <div className="carousel-caption ">
+        <h1 className='display-1 text-capitalize'>HODA</h1>
+        <p className='text-uppercase'>Air Conditioning & Electricals Service</p>
         <button  className='btn btn-primary'>
-        <Link className="nav-link active" to="/Contact">CONTACT US</Link>
+        <Link className="nav-link active " to="/Contact">CONTACT US</Link>
         </button>        
       </div>
     </div>
-    <div className="carousel-item" style={{width:"100%", height:"615px",overflow:"hidden"}}>
-    <img src={img2} className="d-block w-100" alt="..." />
-    <div class="carousel-caption d-none d-md-block" style={{top: "160px"}}>
-        <h5 style={{fontSize:"100px"}}>HODA</h5>
-        <br/>
-        <h3>Air Conditioning & Electricals Service</h3>
-        <br/> <br/>
-        <button  className='btn btn-primary'>
-        <Link className="nav-link active" to="/Contact">CONTACT US</Link>
+    <div className="carousel-item" id='carousel-item'>
+    <img src={img2} className="img d-block "  id='img' alt="..." />
+    <div className="carousel-caption ">
+        <h1 className='display-1 text-capitalize'>HODA</h1>
+        <p className='text-uppercase'>Air Conditioning & Electricals Service</p>
+        <button  className='btn btn-primary '>
+        <Link className="nav-link active " to="/Contact">CONTACT US</Link>
         </button>        
       </div>
     </div>
-    <div className="carousel-item" style={{width:"100%", height:"615px",overflow:"hidden"}}>
-    <img src={img3} className="d-block w-100" alt="..." />
-    <div class="carousel-caption d-none d-md-block" style={{top: "160px"}}>
-        <h5 style={{fontSize:"100px"}}>HODA</h5>
-        <br/>
-        <h3>Air Conditioning & Electricals Service</h3>
-        <br/> <br/>
+    <div className="carousel-item" id='carousel-item'>
+    <img src={img3} className=" img d-block "  id='img' alt="..."/>
+    <div className="carousel-caption ">
+        <h1 className='display-1  text-capitalize'>HODA</h1>
+        <p className='text-uppercase'>Air Conditioning & Electricals Service</p>
         <button  className='btn btn-primary'>
-        <Link className="nav-link active" to="/Contact">CONTACT US</Link>
+        <Link className="nav-link active " to="/Contact">CONTACT US</Link>
         </button>        
       </div>
 
@@ -62,7 +56,7 @@ export default function Carousel() {
   </div>
 </div>
 
-<div><h4 style={{padding:"100px 150px 20px 150px",textAlign:"center"}}>We are into sales, Erection and Commissioning of Centralized Air-conditioning systems having clientage in NCR and all India.
+<div className='aboutContant' id='aboutContant'><h4>We are into sales, Erection and Commissioning of Centralized Air-conditioning systems having clientage in NCR and all India.
 Providing maintenance & services at various sites. Also undertaking direct jobs from clients related to erection, commissioning, maintenance and operation of AC equipments.</h4></div>
 <ServicePageBox/>
 <Current/>

@@ -6,12 +6,14 @@ import Footer from './Components/Footer';
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
 import Servises from './Components/Servises';
+import Project from './Components/Project';
 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
+import ScrollToTop from './Components/ScrollToTop';
 
 
 function App() {
@@ -19,10 +21,12 @@ function App() {
     <>
 
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Carousel />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/Servises" element={<Servises />}></Route>
+          <Route path="/Project" element={<Project />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
 
         </Routes>

@@ -39,7 +39,7 @@ export default function Navbar() {
          <Link className="nav-link active" to="/Servises">Servises</Link>
         </li>
          <li className="nav-item">
-        <Link className="nav-link active" to="/">Projects</Link>
+        <Link className="nav-link active" to="/Project">Projects</Link>
         </li> 
         <li className="nav-item">
          <Link className="nav-link active" to="/Contact">Contact</Link>

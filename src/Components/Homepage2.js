@@ -32,70 +32,40 @@ export default function Homepage2() {
           <Fade left>
 
             <img
+            className="imgg" 
               src={photo1}
               alt="image1"
-              style={{
-                width: "15rem",
-                border: "1px",
-                borderColor: "black",
-                borderStyle: "solid",
-                borderRadius: "8px"
-              }}
-            />
+              id="imgg" />
 
             <img
+            className="imgg"
               src={photo2}
               alt="image2"
-              style={{
-                width: "15rem",
-                border: "1px",
-                borderColor: "black",
-                borderStyle: "solid",
-                borderRadius: "8px",
-              }}
-            />
+              id="imgg" />
           </Fade>
 
           <Fade big duration={1500}>
 
             <img
+            className="imgg"
               src={photo3}
               alt="image3"
-              style={{
-                width: "15rem",
-                border: "1px",
-                borderColor: "black",
-                borderStyle: "solid",
-                borderRadius: "8px",
-              }}
-            />
+              id="imgg" />
           </Fade>
 
           <Fade right>
 
             <img
+            className="imgg"
               src={photo4}
               alt="image4"
-              style={{
-                width: "15rem",
-                border: "1px",
-                borderColor: "black",
-                borderStyle: "solid",
-                borderRadius: "8px",
-              }}
-            />
+              id="imgg" />
 
             <img
+            className="imgg"
               src={photo5}
               alt="image5"
-              style={{
-                width: "15rem",
-                border: "1px",
-                borderColor: "black",
-                borderStyle: "solid",
-                borderRadius: "8px",
-              }}
-            />
+              id="imgg" />
           </Fade>
         </div>
         <Fade bottom>

@@ -10,9 +10,9 @@ export default function Servises() {
     return (
         <>
             <Navbar />
-            <div className="photo" style={{ width: "100%", height: "615px", overflow: "hidden", position: "relative", color: "white" }}>
-                <img src={img4} className="d-block w-100" alt="Photo" />
-                <div className="centered">SERVICES</div>
+            <div className="photoS" >
+                <img src={img4} className="d-block w-100" id='projectImageS' alt="Photo" />
+                <div className="centeredS" id='headdddS'>SERVICES</div>
             </div>
 
             <div className="bohead" >
@@ -20,11 +20,11 @@ export default function Servises() {
                     Hoda Air Conditioning & Electricals Service has a dedicated team undertaking regular maintenance and servicing jobs for all its installations. Our engineers and technicians are intensively traine&to handle the costly, sophisticated air-conditioning installations at client sites. We aim to provide total comfort and peace of mind that incorporates safety, efficiency and economy. </spna></div>
             <ServicePageBox />
 
-            <div className="row" style={{ margin: "0", marginTop: "150px", marginBottom: "100px" }}>
-                <div className="left" style={{ width: "50%", padding: "10px 70px 10px 100px" }}>
+            <div className="row  serviseRow">
+                <div className="leftS" >
                     <h1>OUR STRENGTH</h1>
-                    <br />
-                    <div className="contan" style={{ fontSize: "18px" }}>
+            
+                    <div className="contanS" style={{ fontSize: "18px" }}>
                         <div>1. <span style={{ fontWeight: "bold" }}>Company ethos and guiding principles</span>: As imbibed from our managing director and founding employees, our company
                             DNA speaks of focusing on compromising on quality, timelines, client satisfaction and being fair and honest to our suppliers, sub-contractors and other associated partners.</div>
                         <br />
@@ -39,10 +39,10 @@ export default function Servises() {
                         <div>6. <span style={{ fontWeight: "bold" }}>Our relationships with other partners</span>: As such we share an excellent rapport with the major vendors / suppliers / contractors / sub-contractors / PMC's / consultants etc. This is primarily owing to our transparent culture and this instils a sense of confidence in our partners while dealing with us.</div>
                     </div>
                 </div>
-                <div className="right" style={{ width: "50%", padding: "10px 100px 10px 70px" }}>
+                <div className="rightS" >
                     <h1>FOR OPERATION AND MAINTENANCE</h1>
-                    <br />
-                    <div className="contan" style={{ fontSize: "18px" }}>
+                    
+                    <div className="contanS" style={{ fontSize: "18px" }}>
                         <div>•<span style={{ fontWeight: "bold" }}> Trained and skilled engineers </span>/ technicians for problem
                             <br />
                             •We have teams of <span style={{ fontWeight: "bold" }}>technician and helper</span> to ensure safety of our employee's and faster resolution of
@@ -51,7 +51,7 @@ export default function Servises() {
                             <br />
                             • <span style={{ fontWeight: "bold" }}>Call escalation matrix</span> to ensure that breakdown / service calls are escalated to all the levels in case of</div>
                         <br />
-                        <img src={img5} alt="photo" style={{ width: "110%", height: "25%" }} />
+                        <img src={img5} alt="photo" style={{ width: "100%", height: "25%" }} />
                         <br /><br />
                         <div>•<span style={{ fontWeight: "bold" }}>Service Level Agreements </span>(SLA) to ensure our commitment is made transparent on paper.
                             <br />
@@ -59,7 +59,7 @@ export default function Servises() {
                             <br />
                             • <span style={{ fontWeight: "bold" }}>Latest gadgets / instruments </span>are used by our engineers to measure temperature, humidity, air velocity and other electrical</div>
                         <br />
-                        <img src={img6} alt="photo" style={{ width: "110%", height: "25%" }} />
+                        <img src={img6} alt="photo" style={{ width: "100%", height: "25%" }} />
                         <br /><br />
                     </div>
                 </div>

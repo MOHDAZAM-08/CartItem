@@ -13,14 +13,14 @@ export default function Contact() {
         <>
         <Navbar/>
 
-        <div className="photo" style={{ width: "100%", height: "615px", overflow: "hidden", position: "relative", color: "white" }}>
-                <img src={img7} className="d-block w-100" alt="Photo" />
-                <div className="centeredc">CONTACT US</div>
+        <div className="photoC"  >
+                <img  id='projectImage' src={img7} className="d-block w-100" alt="Photo" />
+                <div className="centeredc" id='headddd'>CONTACT US</div>
             </div>
 
-            <div className="row" style={{margin:"0", marginTop:"70px"}}>
-                <div className="con"  style={{ width: "50%", padding: "10px 100px 10px 70px" }}>
-                    <h1 className='mb-4' style={{color:"#0196d2", fontWeight:"bold"}}>WE'RE READY, LET'S TALK</h1>
+            <div className="row" style={{margin:"0", marginTop:"50px 10px"}}>
+                <div className="con" >
+                    <h1 className='mb-4' style={{color:"#0196d2", fontWeight:"bold", textAlign:"center"}}>WE'RE READY, LET'S TALK</h1>
                     <br/>
                     <div className="mb-3 ">
                         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Your Name" />
@@ -32,10 +32,10 @@ export default function Contact() {
 
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
                     </div>
-                    <button type="button" className="btn btn-primary">Send message</button>
+                    <button type="button" id='button' className="btn btn-primary">Send message</button>
 
                 </div>
-                <div className=""  style={{ width: "40%", padding: "30px 100px 10px 70px" }}>
+                <div className="left"  >
                     <h1 className='mb-3' style={{color:"#0196d2", fontWeight:"bold"}}>CONTACT US</h1>
                     <br/>
                     <h4>Address</h4>
@@ -51,6 +51,7 @@ export default function Contact() {
                     <TiSocialYoutubeCircular size="2.6rem" style={{margin:"0 10px"}}/>
                     <AiFillTwitterCircle size="2.4rem" />
                     </div>
+                    <br/>
                 </div>
             </div>
             <Footer/>

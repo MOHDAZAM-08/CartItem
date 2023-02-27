@@ -3,14 +3,15 @@ import { FaTools } from 'react-icons/fa';
 import { BsFillLightbulbFill } from 'react-icons/bs';
 import { GiAutoRepair } from 'react-icons/gi';
 import { GrUserWorker } from 'react-icons/gr';
+import { Link } from "react-router-dom";
 
 
 export default function ServicePageBox() {
   return (
     <>
-            <h3 style={{textAlign:"center",marginTop: "80px"}}>OUR SERVICES</h3>
-        <div className="row servise" style={{ justifyContent: "center", marginTop: "50px" }}>
-                <div className="card" style={{ width: "22%" }} >
+            <h3 style={{textAlign:"center",marginTop: "50px"}}>OUR SERVICES</h3>
+        <div className="row servise" >
+                <Link className="card" id='card' style={{textDecoration:"none",color:"black"}} to="/Servises">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
                         <FaTools size="5rem" />
                     </div>
@@ -30,9 +31,9 @@ export default function ServicePageBox() {
                             <br />
                             7. VRV/RF Sysyem Installation & maintanance</p>
                     </div>
-                </div>
+                </Link>
 
-                <div className="card" style={{ width: "22%" }}>
+                <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}}  to="/Servises">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
                         <BsFillLightbulbFill size="5rem" />
                     </div>
@@ -56,9 +57,9 @@ export default function ServicePageBox() {
                             9. And All Electrical Equpment
                             Installation</p>
                     </div>
-                </div>
+                </Link>
 
-                <div className="card" style={{ width: "22%" }}>
+                <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}} to="/Servises">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
                         <GiAutoRepair size="5rem" />
                     </div>
@@ -75,9 +76,9 @@ export default function ServicePageBox() {
                             5. And All Type Auto Metion Door
                             Inter Locking System</p>
                     </div>
-                </div>
+                </Link>
 
-                <div className="card" style={{ width: "22%" }}>
+                <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}} to="/Servises">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
                         <GrUserWorker size="5rem" />
                     </div>
@@ -99,7 +100,7 @@ export default function ServicePageBox() {
                             <br />
                             8. Pre-Construction Plan Review</p>
                     </div>
-                </div>
+                </Link>
             </div>
     </>
   )
