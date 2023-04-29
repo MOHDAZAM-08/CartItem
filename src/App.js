@@ -1,9 +1,10 @@
 import './App.css';
 import About from './Components/About';
+
 import Carousel from './Components/Carousel';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Homepage from './Components/Homepage';
+// import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
 import Servises from './Components/Servises';
 import Project from './Components/Project';
@@ -14,6 +15,7 @@ import {
   Route,
 } from "react-router-dom";
 import ScrollToTop from './Components/ScrollToTop';
+import Parts from './Components/Parts';
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/Servises" element={<Servises />}></Route>
           <Route path="/Project" element={<Project />}></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
+          {/* <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/Parts" element={<Parts/>}></Route> */}
+
 
         </Routes>
       </Router>
