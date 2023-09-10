@@ -52,16 +52,7 @@ export default function Navbar() {
               </ul>
 
 
-
             </div>
-            <Link to="/Carts" style={{ textDecoration: "none", color: "white" }}>
-              <div className="cartNav">
-                <div className="Cart">Cart({flattenedArrayLength })</div>
-                <div className="imgCart">
-                  <img src={cart} alt="" style={{ width: "100%" }} />
-                </div>
-              </div>
-            </Link>
           </div>
         </nav>
       </nav>

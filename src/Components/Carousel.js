@@ -25,6 +25,7 @@ import ServicePageBox from './ServicePageBox';
 import { Link } from "react-router-dom";
 import Current from './Current';
 import Homepage2 from './Homepage2';
+import CarouselWithTwoItems from './CarouselWithTwoItems';
 
 
 export default function Carousel() {
@@ -35,7 +36,6 @@ export default function Carousel() {
     
 
       <div className="homecon">
-
         <div className="carddd">
           <h1>ADARSH</h1>
           <p>Refrigeration And Air-Conditioning</p>
@@ -75,15 +75,6 @@ export default function Carousel() {
               </div>
             </div>
 
-            {/* <div className="boxp">
-              <div className="boxpImg">
-                <img src={disp} alt="" />
-              </div>
-              <div className="textP">
-              <h3>DISPENSER</h3>
-              </div>
-            </div> */}
-
             <div className="boxp">
               <div className="boxpImg">
                 <img src={micro} alt="" />
@@ -113,6 +104,12 @@ export default function Carousel() {
 
       </div>
 
+<div className="CarouselWithTwoItems">
+
+      <CarouselWithTwoItems/>
+</div>
+
+
       <div className="HomeWhySec">
             <div className="whyImg">  
               <img src={whyimg} alt="" />
@@ -125,11 +122,11 @@ export default function Carousel() {
                 <div className="icon">
                   <div className="ship">
                     <img src={ship} alt="" />
-                    <p>Fast Delivery</p>
+                    <p>Wide Verity</p>
                   </div>
                   <div className="qual">
                     <img src={quli} alt="" />
-                    <p>Original Product</p>
+                    <p>Affordable Rates</p>
                   </div>
                   <div className="ser">
                     <img src={ser} alt="" />
@@ -141,6 +138,25 @@ export default function Carousel() {
             </div>
 
           </div>
+
+
+        <div className='Popular'>Popular Company</div>
+       <div className="PopulerCompany">
+
+        <div className="company">
+          <h1>Godrej</h1>
+          <h1>LG</h1>
+          <h1>Acer</h1>
+          <h1>Haier</h1>
+          <h1>IFB</h1>
+          <h1>Havells Lloyd</h1>
+          <h1>Whirlpool</h1>
+          <h1>IFB</h1>
+          <h1>Voltas</h1>
+          <h1>Voltas</h1>
+          <h1>Voltas</h1>
+        </div>
+        </div>   
 
 
 
