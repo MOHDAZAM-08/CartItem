@@ -8,12 +8,10 @@ import ScrollToTop from './Components/ScrollToTop';
 import Parts from './Components/Parts';
 import Cart from './Components/Cart';
 import { AppProvider } from './context';
+import React from 'react';
 
 
 function App() {
-
-
-
 
   return (
     <Router>
