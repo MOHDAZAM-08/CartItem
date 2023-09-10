@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="footertext">
             <p> Visit
               504/6
-              JacobhPura
+              JacobPura
               Ch Manhor Singh Azad Marg
               Gurgaon, Haryana<br/>
               Phone: +91 0811391053 , 7982811091 <br/> Email: anilkadam9810@gmail.com</p>

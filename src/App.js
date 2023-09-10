@@ -1,44 +1,35 @@
 import './App.css';
 import About from './Components/About';
-
 import Carousel from './Components/Carousel';
 import Contact from './Components/Contact';
-import Footer from './Components/Footer';
-// import Homepage from './Components/Homepage';
-import Navbar from './Components/Navbar';
 import Servises from './Components/Servises';
-import Project from './Components/Project';
-
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from './Components/ScrollToTop';
 import Parts from './Components/Parts';
+import Cart from './Components/Cart';
+import { AppProvider } from './context';
 
 
 function App() {
+
+
+
+
   return (
-    <>
-
-      <Router>
+    <Router>
       <ScrollToTop />
+      <AppProvider>
         <Routes>
-          <Route path="/" element={<Carousel />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/Servises" element={<Servises />}></Route>
-          <Route path="/Project" element={<Project />}></Route>
-          {/* <Route path="/Contact" element={<Contact />}></Route>
-          <Route path="/Parts" element={<Parts/>}></Route> */}
-
-
+          <Route path="/" element={<Carousel />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Servises" element={<Servises />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Parts" element={<Parts />} />
+          <Route path="/Carts" element={<Cart />} />
         </Routes>
-      </Router>
-      
-      {/* <Route path="/Projects" element={<Projects />}></Route> */}
-    </>
+        </AppProvider>
 
+    </Router>
   );
 }
 

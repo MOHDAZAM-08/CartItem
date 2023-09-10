@@ -20,11 +20,7 @@ export default function ServicePageBox() {
                         <h2 style={{textAlign:"center"}}>PRODUCTS</h2>
                 </Link>
 
-                {/* <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}}  to="/Servises">
-                    <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
-                        <BsFillLightbulbFill size="5rem" />
-                    </div>
-                </Link> */}
+    
 
                 <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}} to="/Servises">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
@@ -33,6 +29,7 @@ export default function ServicePageBox() {
                     <h2 style={{textAlign:"center"}}>SERVICES</h2>
                 </Link>
 
+
                 <Link className="card" id='card'  style={{textDecoration:"none",color:"black"}} to="/parts">
                     <div className="ico" style={{ display: "flex", justifyContent: "center", margin: "20px 5px" }}>
                         {/* <GiRempart size="5rem" style={{color:"green"}} /> */}
@@ -40,6 +37,7 @@ export default function ServicePageBox() {
                     </div>
                     <h2 style={{textAlign:"center"}}>PARTS</h2>
                 </Link>
+                
             </div>
     </>
   )
