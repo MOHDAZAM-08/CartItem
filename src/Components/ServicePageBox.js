@@ -1,9 +1,6 @@
 import React from 'react'
 import { FaTools } from 'react-icons/fa';
-import { BsFillLightbulbFill } from 'react-icons/bs';
 import { GiAutoRepair } from 'react-icons/gi';
-import { GrUserWorker } from 'react-icons/gr';
-import { GiRempart } from 'react-icons/gi';
 import { Link } from "react-router-dom";
 import imgSP from '../img/sp.png'
 
