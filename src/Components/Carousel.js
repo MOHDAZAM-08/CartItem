@@ -23,9 +23,15 @@ import Footer from './Footer';
 import ServicePageBox from './ServicePageBox';
 
 import { Link } from "react-router-dom";
-import Current from './Current';
-import Homepage2 from './Homepage2';
 import CarouselWithTwoItems from './CarouselWithTwoItems';
+import lg from '../img/lg.png'
+import godrej from '../img/godrej.png'
+import Whirlpoo from '../img/WhirlpoolBRAN.png'
+import SAMSUNG from '../img/samsung.png'
+import IFB from '../img/ifb.jpg'
+import VOLTAS from '../img/Voltas.png'
+import KENT from '../img/kent.png'
+
 
 
 export default function Carousel() {
@@ -40,7 +46,7 @@ export default function Carousel() {
           <h1>ADARSH</h1>
           <p>Refrigeration And Air-Conditioning</p>
           <h4>Sadar bazar, Gurgoan</h4>
-          <h5>(Serving you form 1990)</h5>
+          <h5>(Serving you from 1990)</h5>
         </div>
       </div>
       <div className="backGorundColor"></div>
@@ -144,17 +150,27 @@ export default function Carousel() {
        <div className="PopulerCompany">
 
         <div className="company">
-          <h1>Godrej</h1>
-          <h1>LG</h1>
-          <h1>Acer</h1>
-          <h1>Haier</h1>
-          <h1>IFB</h1>
-          <h1>Havells Lloyd</h1>
-          <h1>Whirlpool</h1>
-          <h1>IFB</h1>
-          <h1>Voltas</h1>
-          <h1>Voltas</h1>
-          <h1>Voltas</h1>
+          <div className='ImageSECCompany'>
+            <img src={godrej} alt="" />
+            </div>
+            <div className='ImageSECCompany'>
+            <img src={lg} alt="" />
+            </div>
+            <div className='ImageSECCompany'>
+            <img src={Whirlpoo} alt="" />
+            </div>
+            <div className='ImageSECCompany'>
+            <img src={SAMSUNG} alt="" />
+            </div>
+            <div className='ImageSECCompany'>
+            <img src={IFB} alt="" />
+            </div>
+            <div className='ImageSECCompany'>
+            <img src={VOLTAS} alt="" />
+            </div>
+             <div className='ImageSECCompany'>
+            <img src={KENT} alt="" />
+            </div>
         </div>
         </div>   
 

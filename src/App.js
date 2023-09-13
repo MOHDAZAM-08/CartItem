@@ -9,6 +9,7 @@ import Parts from './Components/Parts';
 import Cart from './Components/Cart';
 import { AppProvider } from './context';
 import React from 'react';
+import WashingSemi from './Pages/WashingSemi';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Parts" element={<Parts />} />
           <Route path="/Carts" element={<Cart />} />
+          <Route path="/WashingSemi" element={<WashingSemi />} />
         </Routes>
         </AppProvider>
 

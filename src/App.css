@@ -300,6 +300,7 @@
 }
 
 .boxp {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -333,6 +334,63 @@
 
 .textP h3 {
   font-size: 1rem;
+}
+.headingPages{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  color: #2b2b2b ;
+  font-weight: 400;
+}
+.activedis{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.WASHING{
+  text-decoration: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 500px;
+  width: 80%;
+}
+
+.ButtonWASHING{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ButtonWASHING button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  height: 100px;
+  width: 250px;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 1rem;
+  background-color: #2b2b2b;
+  color: rgb(255, 255, 255);
+}
+
+.ButtonWASHING button:hover{
+  background-color: transparent;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+  font-weight: 500;
 }
 
 
@@ -387,6 +445,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   
 }
 
@@ -399,7 +458,7 @@
   gap: 20px;
 }
 
-.company h1{
+.company .ImageSECCompany{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,10 +466,15 @@
   color: rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-weight: 400;
-  height: 40px;
-  width: 120px;
+  height: 90px;
+  width: 190px;
   font-size: 1.1rem;
-  
+  padding: 30px 30px;
+}
+
+.company .ImageSECCompany img{
+  width: 100%;
+  aspect-ratio: 3/1.4;
 }
 
 
@@ -508,16 +572,48 @@ height: 100%;
 
 }
 
+.servivePageBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  height: 400px;
+}
+
 .icon {
   padding-top: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  
   text-align: center;
 }
 
 .icon p {
   font-weight: 500;
+}
+
+
+.ico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 70px ;
+  height: 70px;
+
+}
+
+
+.ico h2{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: gray;
+}
+
+.ico img{
+  width: 100%;
 }
 
 
@@ -561,9 +657,14 @@ height: 100%;
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  #1b140d26 0px 3px 8px;
   cursor: pointer;
-  border: none;
-  width: 22%;
+  border: 1px solid #5c0202;
+  height: 200px;
+  width: 200px;
 }
 
 @media (min-width : 300px) and (max-width:600px) {
@@ -591,6 +692,8 @@ height: 100%;
   scale: 1.1;
   transition: all;
   transition-duration: 900ms;
+  border: none;
+  box-shadow: rgba(57, 192, 255, 0.25) 0px 54px 55px, rgba(22, 115, 245, 0.12) 0px -12px 30px, rgba(46, 96, 245, 0.12) 0px 4px 6px, rgba(37, 147, 243, 0.17) 0px 12px 13px, rgba(44, 167, 243, 0.09) 0px -3px 5px;
 }
 
 .card-title {
@@ -697,7 +800,6 @@ s .con {
 .details {
   width: 37%;
   margin: 35px 70px;
-  /* float: right; */
 }
 
 

@@ -119,6 +119,72 @@ import Sidebar from './Sidebar'
 import { useNavigate } from 'react-router-dom';
 import { AppContext, useAppContext } from '../context';
 import { useEffect } from 'react';
+import WashingSemi from '../Pages/WashingSemi';
+import { Link } from 'react-router-dom/dist';
+
+
+
+const WASHING = () => {
+  return (
+    <Link to="/WashingSemi" className='WASHING'>
+      <h1>Select any one:</h1>
+      <div className="ButtonWASHING">
+        <button>Automatic Washing machine</button>
+        <button>Semi-Automatic Washing machine</button>
+      </div>
+    </Link>  
+  );
+};
+
+const FRIDGE = () => {
+  return (
+    <div className='WASHING'>
+      <h1>Select any one:</h1>
+      <div className="ButtonWASHING">
+        <button>Automatic Washing machine</button>
+        <button>Semi-Automatic Washing machine</button>
+      </div>
+    </div>
+  );
+};
+
+const RO = () => {
+  return (
+    <div className='WASHING'>
+     <h1>Select any one:</h1>
+      <div className="ButtonWASHING">
+        <button>Automatic Washing machine</button>
+        <button>Semi-Automatic Washing machine</button>
+      </div>
+    </div>
+  );
+};
+
+const DISPENSER = () => {
+  return (
+    <div className='WASHING'>
+     <h1>Select any one:</h1>
+      <div className="ButtonWASHING">
+        <button>Automatic Washing machine</button>
+        <button>Semi-Automatic Washing machine</button>
+      </div>
+    </div>
+  );
+};
+
+const MICROWAVE = () => {
+  return (
+    <div className='WASHING'>
+       <h1>Select any one:</h1>
+      <div className="ButtonWASHING">
+        <button>Automatic Washing machine</button>
+        <button>Semi-Automatic Washing machine</button>
+      </div>
+    </div>
+  );
+};
+
+
 
 
 
@@ -234,6 +300,16 @@ const products = [
 
 export default function Parts() {
 
+
+
+
+  function scrollToProductDiv() {
+    const productDiv = document.getElementById('productDiv');
+    if (productDiv) {
+        productDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
   const { setSharedState,setcartdata } = useAppContext();
 
 
@@ -286,6 +362,14 @@ export default function Parts() {
   }
 
 
+  const [activeField, setActiveField] = useState(null);
+
+  const handleFieldClick = (field) => {
+    scrollToProductDiv();
+    setActiveField(field);
+  };
+
+
   return (
     <>
       <Navbar />
@@ -300,26 +384,12 @@ export default function Parts() {
           <h2>Appliances</h2>
           <p>Servicing, Repair, Installation &amp; Uninstallation</p>
           </div>
-
-          {/* <select value={selectedCategory} onChange={handleSelectChange}>
-            <option value="All">All Categories</option>
-            {Array.from(new Set(products.map(product => product.category))).map((category, index) => (
-              <option key={index} value={category}>
-                {category}
-              </option>
-            ))}
-          </select> */}
-
-
-
-
-
         </div>
 
 
         <div className="boxAPartsP">
 
-          <div className="boxp"  >
+          <div className="boxp"  onClick={() => handleFieldClick("WASHING")}>
             <div className="boxpImg">
               <img src={wash} alt="" />
             </div>
@@ -328,7 +398,7 @@ export default function Parts() {
             </div>
           </div>
 
-          <div className="boxp" >
+          <div className="boxp" onClick={() => handleFieldClick("FRIDGE")}>
             <div className="boxpImg">
               <img src={fridge} alt="" />
             </div>
@@ -337,30 +407,31 @@ export default function Parts() {
             </div>
           </div>
 
-          <div className="boxp"  >
-            <div className="boxpImg">
-              <img src={disp} alt="" />
-            </div>
-            <div className="textP">
-              <h3>R O</h3>
-            </div>
-          </div>
-
-          <div className="boxp" >
+          <div className="boxp" onClick={() => handleFieldClick("MICROWAVE")}>
             <div className="boxpImg">
               <img src={micro} alt="" />
             </div>
             <div className="textP">
-              <h3>DISPENSER</h3>
+             
+              <h3>MICROWAVE</h3>
             </div>
           </div>
 
-          <div className="boxp">
+          <div className="boxp" onClick={() => handleFieldClick("R O")}>
             <div className="boxpImg">
               <img src={ro} alt="" />
             </div>
             <div className="textP">
-              <h3>MICROWAVE</h3>
+              <h3>R O</h3>              
+            </div>
+          </div>
+
+          <div className="boxp" onClick={() => handleFieldClick("DISPENSER")} >
+            <div className="boxpImg">
+              <img src={disp} alt="" />
+            </div>
+            <div className="textP">
+            <h3>DISPENSER</h3>
             </div>
           </div>
 
@@ -375,16 +446,15 @@ export default function Parts() {
       </div>
 
 
-      <div className="activedis">
-
-        {/* {activeField === "WASHING" && <WASHING />} */}
-        {/* {activeField === "FRIDGE" && <FRIDGE />} */}
-        {/* {activeField === "R O" && <R />}
+      <div className="activedis" id='productDiv'>
+        {activeField === "WASHING" && <WASHING />}
+        {activeField === "FRIDGE" && <FRIDGE />}
+        {activeField === "R O" && <RO />}
         {activeField === "DISPENSER" && <DISPENSER />}
-        {activeField === "MICROWAVE" && <MICROWAVE />} */}
+        {activeField === "MICROWAVE" && <MICROWAVE />}
       </div>
 
-
+{/* 
       <div className='proCard'>
         {filteredProducts.map(product => (
           <div className="ProductImgCard" key={product.id}>
@@ -402,7 +472,8 @@ export default function Parts() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+
 
 
   
