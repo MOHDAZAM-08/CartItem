@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import img from '../img/logo.png'
+// import img from '../img/logo.png'
 import { Link } from "react-router-dom";
 import Sidebar from './Sidebar';
 import cart from '../img/Cart.png';
@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className=" navbar-expand-lg navbar-drak fixed-top "  >
         <nav className={navbar ? "navbar active" : "navbar"}>
           <div className="container">
-            <Link className="navbar-brand" to="/"><img src={img} alt="logo" style={{ width: "50px" }} /> ADARSH</Link>
+            <Link className="navbar-brand" to="/"><img src="" alt="logo" style={{ width: "50px" }} /> ADARSH</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

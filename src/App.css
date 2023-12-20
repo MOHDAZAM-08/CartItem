@@ -440,6 +440,7 @@
   font-size: 2rem;
   font-weight: 500;
   padding-bottom: 30px;
+  color: #f46a00;
 }
 .PopulerCompany{
   display: flex;
@@ -479,25 +480,38 @@
 
 
 .CarouselWithTwoItems{
-  margin-top: 20px;
-  padding: 20px 20px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px ;
+  overflow-x: hidden;
   overflow-y: hidden;
+  
+ 
 }
 
-.CarouselWithTwoItems{
-overflow-x: hidden;
-height: 100%;
+.CarouselWithTwoItems h1{
+  padding-left: 50px;
+  color: #f46a00;
 }
 
 
-
-
-.CarsolImg img{
+.CarsolImg{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 300px;
+ width: 400px;
+ height: 300px;
+ padding: 20px;
+overflow: hidden;
+}
+
+.CarsolImg img{
+  display: block;
+  margin: auto;
+  height:100%;
+  width: 90%;
+
 }
 /* cursole */
 

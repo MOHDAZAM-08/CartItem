@@ -146,7 +146,7 @@ export default function Carousel() {
           </div>
 
 
-        <div className='Popular'>Popular Company</div>
+        <div className='Popular'>Popular Company :</div>
        <div className="PopulerCompany">
 
         <div className="company">
