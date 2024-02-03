@@ -126,7 +126,7 @@ export default function WashingSemi() {
   return (
     <>
     <Navbar/>
-        <div className='headingPages'>Automatic Washing machine</div>
+        <div className='headingPages'>Semi Washing machine</div>
        <div className='proCard'>
         {products.map(product => (
           <div className="ProductImgCard" key={product.id}>
@@ -136,10 +136,9 @@ export default function WashingSemi() {
               </div>
               <div className="proText">
                 <h1>{product.name}</h1>
-                <p>{product.category}</p>
               </div>
               <div className="CartButton">
-                <button>Cart</button>
+                <button>Contact</button>
               </div>
             </div>
           </div>

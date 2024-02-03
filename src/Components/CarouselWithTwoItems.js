@@ -18,7 +18,6 @@ function CarouselWithTwoItems() {
 
   return (
     <div className='c'>
-      <h1>New Arrivals Items :</h1>
       <Slider {...settings} className='Slider'>
         <div className='CarsolImg'>
           <img src={shop} alt="Image 1" />

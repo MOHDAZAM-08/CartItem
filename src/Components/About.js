@@ -1,5 +1,5 @@
 import React from 'react'
-import img4 from '../img/ph4.jpg'
+import img4 from '../img/about.jpg'
 import Footer from './Footer'
 import Navbar from './Navbar'
 

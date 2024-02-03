@@ -11,7 +11,7 @@ export default function ServicePageBox() {
         <>
             <h3 style={{ textAlign: "center", marginTop: "50px",color:"blue" }}>OUR SERVICES</h3>
             <div className="servivePageBox" >
-                <Link className="card" id='card' style={{ textDecoration: "none", color: "black" }} to="/Servises">
+                <Link className="card" id='card' style={{ textDecoration: "none", color: "black" }} to="/">
 
                     <div className="ico">
                         <img src={imgTool} alt="" />
@@ -22,7 +22,7 @@ export default function ServicePageBox() {
 
 
 
-                <Link className="card" id='card' style={{ textDecoration: "none", color: "black" }} to="/Servises">
+                <Link className="card" id='card' style={{ textDecoration: "none", color: "black" }} to="/">
                     <div className="ico">
                         <img src={imgSErvi} alt="" />
                     <h2 style={{ textAlign: "center" }}>SERVICES</h2>

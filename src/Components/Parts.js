@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {useContext } from 'react';
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -116,8 +115,6 @@ import imgv1 from '../img/veg.jpg'
 import imgv2 from '../img/veg (1).jpg'
 import imgv3 from '../img/veg (2).jpg'
 import Sidebar from './Sidebar'
-import { useNavigate } from 'react-router-dom';
-import { AppContext, useAppContext } from '../context';
 import { useEffect } from 'react';
 import WashingSemi from '../Pages/WashingSemi';
 import { Link } from 'react-router-dom/dist';
@@ -126,11 +123,11 @@ import { Link } from 'react-router-dom/dist';
 
 const WASHING = () => {
   return (
-    <Link to="/WashingSemi" className='WASHING'>
+    <Link className='WASHING'>
       <h1>Select any one:</h1>
       <div className="ButtonWASHING">
-        <button>Automatic Washing machine</button>
-        <button>Semi-Automatic Washing machine</button>
+        <Link to="/WashingAuto" style={{textDecoration:"none"}}> <button>Automatic Washing machine</button></Link>
+        <Link to="/WashingSemi" style={{textDecoration:"none"}}><button>Semi-Automatic Washing machine</button></Link> 
       </div>
     </Link>  
   );
@@ -141,8 +138,8 @@ const FRIDGE = () => {
     <div className='WASHING'>
       <h1>Select any one:</h1>
       <div className="ButtonWASHING">
-        <button>Automatic Washing machine</button>
-        <button>Semi-Automatic Washing machine</button>
+      <Link to="/SingleDoor" style={{textDecoration:"none"}}> <button>Single Door Fridge</button></Link>
+        <Link to="/DoubleDoor" style={{textDecoration:"none"}}><button>Double Door Fridge</button></Link> 
       </div>
     </div>
   );
@@ -150,13 +147,7 @@ const FRIDGE = () => {
 
 const RO = () => {
   return (
-    <div className='WASHING'>
-     <h1>Select any one:</h1>
-      <div className="ButtonWASHING">
-        <button>Automatic Washing machine</button>
-        <button>Semi-Automatic Washing machine</button>
-      </div>
-    </div>
+    <Link to="/Ro">Click to explore</Link>
   );
 };
 
@@ -300,66 +291,12 @@ const products = [
 
 export default function Parts() {
 
-
-
-
   function scrollToProductDiv() {
     const productDiv = document.getElementById('productDiv');
     if (productDiv) {
         productDiv.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
-  const { setSharedState,setcartdata } = useAppContext();
-
-
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
-  const filteredProducts = selectedCategory === 'All'
-    ? products
-    : products.filter(products => products.category === selectedCategory);
-
-
-
-    const [selectedItems, setSelectedItems] = useState([]);
-
-    console.log(selectedItems,"this parts")
-
-    const [cartItems, setCartItems] = useState([]);
-    console.log(cartItems,"this is cartitem")
-
-// context api call
-    const addDataToStateA = () => {
-      console.log("add data buttonn Clicked");
-      setSharedState([selectedItems]);  
-      setcartdata([cartItems]);  
-    };
-   
-// to send data
-    useEffect(() => {
-      addDataToStateA();
-    }, [selectedItems],[cartItems]); 
-
-    const toggleItem = (item) => {
-
-      console.log("this is toggele")
-      if (selectedItems.includes(item)) {
-        setSelectedItems(selectedItems.filter(selectedItem => selectedItem !== item));
-      } else {
-         setSelectedItems([...selectedItems, item]);
-      }
-      addDataToStateA();
-    };
-
-  function handleSelectChange(e) {
-    setSelectedCategory(e.target.value);
-    const height = window.innerHeight;
-    window.scrollTo({
-      top: height,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
 
 
   const [activeField, setActiveField] = useState(null);
@@ -407,6 +344,7 @@ export default function Parts() {
             </div>
           </div>
 
+          <Link to="/Microwave" style={{textDecoration:"none"}}>
           <div className="boxp" onClick={() => handleFieldClick("MICROWAVE")}>
             <div className="boxpImg">
               <img src={micro} alt="" />
@@ -416,7 +354,9 @@ export default function Parts() {
               <h3>MICROWAVE</h3>
             </div>
           </div>
+          </Link>
 
+          <Link to="/Ro" style={{textDecoration:"none"}}>
           <div className="boxp" onClick={() => handleFieldClick("R O")}>
             <div className="boxpImg">
               <img src={ro} alt="" />
@@ -425,7 +365,10 @@ export default function Parts() {
               <h3>R O</h3>              
             </div>
           </div>
+          </Link>
 
+
+          <Link to="/Dispenser" style={{textDecoration:"none"}}>
           <div className="boxp" onClick={() => handleFieldClick("DISPENSER")} >
             <div className="boxpImg">
               <img src={disp} alt="" />
@@ -434,49 +377,21 @@ export default function Parts() {
             <h3>DISPENSER</h3>
             </div>
           </div>
+          </Link>
 
 
 
         </div>
-
-
-
-
-
       </div>
 
 
       <div className="activedis" id='productDiv'>
         {activeField === "WASHING" && <WASHING />}
         {activeField === "FRIDGE" && <FRIDGE />}
-        {activeField === "R O" && <RO />}
+        {activeField === "R O" &&  <RO /> }
         {activeField === "DISPENSER" && <DISPENSER />}
         {activeField === "MICROWAVE" && <MICROWAVE />}
-      </div>
-
-{/* 
-      <div className='proCard'>
-        {filteredProducts.map(product => (
-          <div className="ProductImgCard" key={product.id}>
-            <div className="productCard">
-              <div className="ProImg">
-                <img src={product.img} alt={product.name} />
-              </div>
-              <div className="proText">
-                <h1>{product.name}</h1>
-                <p>{product.category}</p>
-              </div>
-              <div className="CartButton" onClick={()=>toggleItem(product.name)}>
-                <button>Cart</button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
-
-
-
-  
+      </div>  
 
       <Footer />
     </>

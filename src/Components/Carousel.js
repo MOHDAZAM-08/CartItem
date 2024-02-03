@@ -34,6 +34,7 @@ import KENT from '../img/kent.png'
 
 
 
+
 export default function Carousel() {
 
   return (
